@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ECON 2301 | Exam 3 Review</title><style>body{font:16px system-ui,Arial;margin:0;background:#f5f7fb;color:#17263a}main{max-width:1000px;margin:auto;padding:24px}header{background:#143657;color:white;padding:28px;border-radius:14px}h1{margin:0}h2{margin-top:32px;color:#123b62}h3{margin:20px 0 6px}section,.graph{background:white;padding:20px;border-radius:12px;margin-top:16px;box-shadow:0 1px 5px #ccd4df}ul{margin:6px 0 10px;padding-left:22px}li{margin:5px 0}label{display:block;margin:10px 0;font-weight:600}input[type=range]{width:min(400px,95%);vertical-align:middle}svg{width:100%;max-width:640px;height:auto;border:1px solid #e2e8f0;border-radius:8px}p{line-height:1.5}.note{color:#526174;font-size:.92em}.result{font-weight:700;color:#125a81}.graph-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:700px){.graph-grid{display:block}main{padding:12px}}button{background:#173e64;color:white;border:0;padding:9px 15px;border-radius:7px;cursor:pointer}button:focus,input:focus{outline:3px solid #e4b34a}</style></head><body><main><header><h1>Exam 3 | Interactive Study Guide</h1><p>ECON 2301 · Chapters 25–28 · Quick review + adjustable graphs</p></header>
+<section><h2>Chapter 25: Economic Growth</h2><h3>25.1 Basics of Economic Growth</h3><ul><li>Real GDP growth vs. real GDP per person; labor quantity and productivity.</li><li>Calculate growth: (new GDP − old GDP) ÷ old GDP × 100.</li><li>Rule of 70: doubling time ≈ 70 ÷ annual growth rate (%).</li></ul><h3>25.2 Labor Productivity Growth</h3><ul><li>Labor productivity = real GDP ÷ aggregate hours worked.</li><li>Physical capital vs. consumer goods and financial capital; capital accumulation raises productivity.</li></ul><h3>25.3 Causes and Effects of Growth</h3><ul><li>Classical theory: population pressure, scarce resources, subsistence.</li><li>New growth theory: reusable knowledge, innovation, incentives, sustained growth.</li></ul><h3>25.4 Achieving Faster Growth</h3><ul><li>Economic freedom, property rights (including patents), markets and price signals.</li><li>Saving, investment, human capital, and differences in countries’ growth rates.</li></ul></section>
+<section><h2>Chapter 26: Finance, Saving, and Investment</h2><h3>26.1 Financial Markets and Institutions</h3><ul><li>Financial vs. physical capital; stocks (ownership), bonds (promised payments), loans.</li><li>Financial intermediaries borrow and lend; bond prices and yields move inversely.</li></ul><h3>26.2 Loanable Funds Market</h3><ul><li>Sources: private saving, government surpluses, foreign borrowing.</li><li>Uses: business investment, government deficits, international lending/investment.</li><li>Saving supply and borrowing demand determine the real interest rate.</li></ul><h3>26.3 Government in Loanable Funds</h3><ul><li>Deficits raise borrowing demand and can raise real rates and crowd out investment.</li><li>Surpluses generally have the opposite effect, other things equal.</li></ul></section>
+<div class="graph"><h3>Interactive graph 1 · Loanable funds</h3><p class="note">Move either slider to shift saving supply or borrowing demand. Illustrative linear curves, not measured data. Axis values are indices and percentage rates.</p><label>Saving supply shift <input id="saving" type="range" min="-25" max="25" value="0"> <output id="savingV">0</output></label><label>Borrowing demand shift <input id="borrow" type="range" min="-25" max="25" value="0"> <output id="borrowV">0</output></label><svg id="loanChart" viewBox="0 0 600 350" role="img" aria-label="Interactive loanable funds supply and demand graph"></svg><p id="loanResult" class="result" aria-live="polite"></p><button onclick="resetLoan()">Reset graph</button></div>
+<div class="graph"><h3>Interactive graph 2 · Government deficit and crowding out</h3><p class="note">Increase deficit-financed government borrowing to see the real interest rate rise and private investment fall in this simplified model.</p><label>Government borrowing <input id="deficit" type="range" min="0" max="50" value="0"> <output id="deficitV">0</output></label><svg id="crowdChart" viewBox="0 0 600 350" role="img" aria-label="Interactive crowding-out graph"></svg><p id="crowdResult" class="result" aria-live="polite"></p><button onclick="resetDeficit()">Reset graph</button></div>
+<section><h2>Chapter 27: The Monetary System</h2><h3>27.1 What Is Money?</h3><ul><li>Functions: medium of exchange, unit of account, store of value.</li><li>Barter and double coincidence of wants; currency vs. cards.</li><li>Identify and calculate M1 and M2 from deposit and currency data.</li></ul><h3>27.2 Banking System</h3><ul><li>Bank assets (reserves, loans, securities) vs. liabilities (deposits).</li><li>Reserves = vault cash + Fed balances; excess = actual − desired reserves.</li><li>Reserve ratio = reserves ÷ deposits; money multiplier = (1 + c) ÷ (r + c), where c is currency drain/deposits and r is desired reserves/deposits.</li><li>Bank lending, deposit creation, balance sheets and reserve changes.</li></ul><h3>27.3 Federal Reserve System</h3><ul><li>Central bank, Board of Governors, FOMC, federal funds rate and discount rate.</li><li>Identify Fed monetary policy tools and FOMC’s policymaking role.</li></ul><h3>27.8 Regulating the Quantity of Money</h3><ul><li>Open market purchase → higher reserves; sale → lower reserves.</li><li>Trace reserves → lending → deposits → money quantity in the exam’s simplified model.</li></ul></section>
+<section><h2>Chapter 28: Money, Interest, and Inflation</h2><h3>28.1 Money and Interest Rates</h3><ul><li>Money demand means money people choose to hold; opportunity cost = forgone interest.</li><li>Money vs. bonds; inverse bond price–yield relationship.</li><li>Short-run interest-rate response to money supply shifts; long-run price level and inflation effects.</li></ul><h3>28.3 Cost of Inflation</h3><ul><li>Purchasing power, inflation tax on holding money, misallocation and uncertainty.</li><li>Shoe-leather, confusion and uncertainty costs.</li><li>Hyperinflation: Germany 1923 vs. Venezuela 2016; monetary financing of government spending and social disruption.</li></ul></section>
+<div class="graph"><h3>Interactive graph 3 · Money supply and nominal interest rate</h3><p class="note">Move the money supply slider. Money demand slopes down; nominal money supply is vertical. Illustrative short-run equilibrium with a fixed nominal money supply. Axes show an index and percentage rates.</p><label>Money supply <input id="money" type="range" min="20" max="80" value="50"> <output id="moneyV">50</output></label><svg id="moneyChart" viewBox="0 0 600 350" role="img" aria-label="Interactive money market graph"></svg><p id="moneyResult" class="result" aria-live="polite"></p><button onclick="resetMoney()">Reset graph</button></div>
+<section><h2>Calculation checklist</h2><ul><li>Real GDP growth rate and Rule of 70</li><li>Labor productivity</li><li>M1 and M2 totals</li><li>Bank reserve ratio and excess reserves</li><li>Money multiplier and potential deposit expansion</li></ul><p class="note">Exam-aligned review: historical examples and simplified textbook money creation assumptions are retained. Actual current Fed implementation and monetary definitions can differ.</p></section>
+</main><script>
+'use strict';
+const $=id=>document.getElementById(id);
+const W=600,H=390,L=76,R=565,T=34,B=315,QMAX=100,RMAX=12;
+const X=q=>L+(q/QMAX)*(R-L),Y=r=>B-(r/RMAX)*(B-T);
+const seg=(x1,y1,x2,y2,color,width=2,dash='')=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="${width}" ${dash?`stroke-dasharray="${dash}"`:''}/>`;
+const text=(x,y,t,size=12,color='#243447',anchor='middle')=>`<text x="${x}" y="${y}" font-size="${size}" fill="${color}" text-anchor="${anchor}" font-family="system-ui,Arial">${t}</text>`;
+function axes(xLabel,yLabel){
+ let v='';
+ for(let q=0;q<=100;q+=20){v+=seg(X(q),T,X(q),B,'#e4eaf0',1)+text(X(q),B+20,q);}
+ for(let r=0;r<=12;r+=2){v+=seg(L,Y(r),R,Y(r),'#e4eaf0',1)+text(L-10,Y(r)+4,r,12,'#243447','end');}
+ v+=seg(L,T,L,B,'#27374a',2)+seg(L,B,R,B,'#27374a',2);
+ v+=text((L+R)/2,370,xLabel,15)+`<text x="18" y="${(T+B)/2}" transform="rotate(-90 18 ${(T+B)/2})" text-anchor="middle" font-size="15" font-family="system-ui,Arial" fill="#243447">${yLabel}</text>`;
+ return v;
+}
+function curve(f,color,width=3){let d='';for(let q=0;q<=100;q+=1){d+=(q?'L':'M')+X(q).toFixed(2)+','+Y(f(q)).toFixed(2)+' ';}return `<path d="${d}" fill="none" stroke="${color}" stroke-width="${width}" clip-path="url(#plotclip)"/>`;}
+function chart(id,body){$(id).setAttribute('viewBox',`0 0 ${W} ${H}`);$(id).innerHTML=`<defs><clipPath id="plotclip"><rect x="${L}" y="${T}" width="${R-L}" height="${B-T}"/></clipPath></defs>`+body;}
+function equilibrium(q,r){return seg(X(q),Y(r),X(q),B,'#65758b',1.5,'5 4')+seg(L,Y(r),X(q),Y(r),'#65758b',1.5,'5 4')+`<circle cx="${X(q)}" cy="${Y(r)}" r="5.5" fill="#17263a"/>`+text(X(q)+12,Y(r)-12,`E (${q.toFixed(1)}, ${r.toFixed(1)}%)`,12,'#17263a','start');}
+const teal='#087f8c',orange='#d06435',gray='#94a3b8';
+function updateLoan(){
+ const s=+$('saving').value,d=+$('borrow').value;$('savingV').value=s;$('borrowV').value=d;
+ // Saving supply r = 2 + .08q - .04s; borrowing demand r = 10 - .08q + .04d.
+ const supply=q=>2+.08*q-.04*s,demand=q=>10-.08*q+.04*d;
+ const q=50+.25*(s+d),r=supply(q);
+ let v=axes('Quantity of loanable funds (index)','Real interest rate (%)');
+ v+=curve(supply,teal)+curve(demand,orange)+equilibrium(q,r);
+ v+=text(470,55,'S (saving)',13,teal,'start')+text(470,74,'D (borrowing)',13,orange,'start');
+ chart('loanChart',v);
+ $('loanResult').textContent=`Equilibrium: real interest rate ${r.toFixed(1)}%; loanable funds ${q.toFixed(1)} (index).`;
+}
+function resetLoan(){$('saving').value=0;$('borrow').value=0;updateLoan();}
+function updateDeficit(){
+ const g=+$('deficit').value;$('deficitV').value=g;
+ // Total borrowing demand = private investment demand plus government borrowing g.
+ // S: r = 2 + .08q. Dtotal: r = 10 + .08g - .08q.
+ const supply=q=>2+.08*q,baseDemand=q=>10-.08*q,totalDemand=q=>10+.08*g-.08*q;
+ const q=50+.5*g,r=supply(q),privateInv=q-g;
+ let v=axes('Total loanable funds (index)','Real interest rate (%)');
+ v+=curve(supply,teal)+curve(baseDemand,gray,2)+curve(totalDemand,orange)+equilibrium(q,r);
+ v+=text(440,53,'S (saving)',13,teal,'start')+text(440,72,'D (total)',13,orange,'start')+text(440,91,'D₀ (before deficit)',12,gray,'start');
+ chart('crowdChart',v);
+ $('crowdResult').textContent=`Real interest rate ${r.toFixed(1)}%; total funds ${q.toFixed(1)}; government borrowing ${g.toFixed(1)}; private investment ${privateInv.toFixed(1)} (down ${(50-privateInv).toFixed(1)}).`;
+}
+function resetDeficit(){$('deficit').value=0;updateDeficit();}
+function updateMoney(){
+ const m=+$('money').value;$('moneyV').value=m;
+ // Fixed nominal money supply is vertical; downward-sloping money demand: r = 10 - .1q.
+ const demand=q=>10-.1*q,r=demand(m);
+ let v=axes('Quantity of money (index)','Nominal interest rate (%)');
+ v+=curve(demand,orange)+seg(X(m),Y(12),X(m),B,teal,3)+equilibrium(m,r);
+ v+=text(442,52,'MD (money demand)',13,orange,'start')+text(X(m)+7,110,'MS',13,teal,'start');
+ chart('moneyChart',v);
+ $('moneyResult').textContent=`Equilibrium: nominal interest rate ${r.toFixed(1)}%; money supply ${m} (index).`;
+}
+function resetMoney(){$('money').value=50;updateMoney();}
+['saving','borrow'].forEach(id=>$(id).addEventListener('input',updateLoan));
+$('deficit').addEventListener('input',updateDeficit);$('money').addEventListener('input',updateMoney);
+updateLoan();updateDeficit();updateMoney();
+</script></body></html>
